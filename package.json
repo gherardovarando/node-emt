@@ -1,0 +1,29 @@
+{
+  "name": "node-emt",
+  "version": "0.0.1",
+  "description": "node module that implements EMT/CRTM API for Madrid public transport",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gherardovarando/node-emt.git"
+  },
+  "keywords": [
+    "madrid",
+    "bus",
+    "emt",
+    "node",
+    "npm"
+  ],
+  "author": "gherardo varando <gherardo.varando@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gherardovarando/node-emt/issues"
+  },
+  "homepage": "https://github.com/gherardovarando/node-emt#readme",
+  "dependencies": {
+    "emtmad-bus-times-node": "0.0.1"
+  }
+}

@@ -18,7 +18,8 @@ class Emt {
   }
 
   setIdentity(id, key) {
-
+    this._id = id;
+    this._key = key;
   }
 
 
@@ -26,12 +27,12 @@ class Emt {
     let arrive = {
       busTimeLeft: 99999999
     };
-    if (typeof lineId === 'number'){
+    if (typeof lineId === 'number') {
       lineId = `${lineId}`;
     }
     this.arriveStop(idStop, (info) => {
       info.arrives.map((a) => {
-        if (arrive.busTimeLeft > a.busTimeLeft && ((typeof lineId != 'string' ) || (lineId === a.lineId))) {
+        if (arrive.busTimeLeft > a.busTimeLeft && ((typeof lineId != 'string') || (lineId === a.lineId))) {
           arrive = a;
         }
       });
